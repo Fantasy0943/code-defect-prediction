@@ -1,0 +1,109 @@
+{
+  "extraction_time": "2026-05-25T01:19:57.134698+00:00",
+  "total_records": 5,
+  "features": [
+    {
+      "commit_hash": "f78ae4ebc219355f6f49f72e89157a857f5efb21",
+      "author_name": "Test User",
+      "author_email": "test@example.com",
+      "commit_date": "2026-05-25T09:11:50+08:00",
+      "file_path": "hello.py",
+      "added_lines": 1,
+      "deleted_lines": 0,
+      "churn": 1,
+      "age_days": 0,
+      "message": "Initial commit: add hello.py",
+      "is_bug_fix": false,
+      "file_type": "py",
+      "cyclomatic_complexity": 0,
+      "maintainability_index": 0,
+      "method_count": 0,
+      "error": "unexpected character after line continuation character (<unknown>, line 1)"
+    },
+    {
+      "commit_hash": "80c93154f980e9cc884d9b6113e21c4c6d775c5f",
+      "author_name": "Test User",
+      "author_email": "test@example.com",
+      "commit_date": "2026-05-25T09:12:01+08:00",
+      "file_path": "math.py",
+      "added_lines": 1,
+      "deleted_lines": 0,
+      "churn": 1,
+      "age_days": 0,
+      "message": "Add math module with basic operations",
+      "is_bug_fix": false,
+      "file_type": "py",
+      "cyclomatic_complexity": 0,
+      "maintainability_index": 0,
+      "method_count": 0,
+      "error": "unexpected character after line continuation character (<unknown>, line 1)"
+    },
+    {
+      "commit_hash": "80a89af1c2ec12dae60a55d74b8d8c73e444ca59",
+      "author_name": "Test User",
+      "author_email": "test@example.com",
+      "commit_date": "2026-05-25T09:12:12+08:00",
+      "file_path": "math.py",
+      "added_lines": 1,
+      "deleted_lines": 1,
+      "churn": 2,
+      "age_days": 0,
+      "message": "Fix: handle None values in add function PR #123",
+      "is_bug_fix": true,
+      "file_type": "py",
+      "cyclomatic_complexity": 0,
+      "maintainability_index": 0,
+      "method_count": 0,
+      "error": "unexpected character after line continuation character (<unknown>, line 1)"
+    },
+    {
+      "commit_hash": "f84cc36dff5cf964b4a3bbed867574559830296f",
+      "author_name": "Test User",
+      "author_email": "test@example.com",
+      "commit_date": "2026-05-25T09:19:32+08:00",
+      "file_path": "complex.py",
+      "added_lines": 1,
+      "deleted_lines": 0,
+      "churn": 1,
+      "age_days": 0,
+      "message": "Add complex function with high cyclomatic complexity",
+      "is_bug_fix": false,
+      "file_type": "py",
+      "cyclomatic_complexity": 0,
+      "maintainability_index": 0,
+      "method_count": 0,
+      "error": "unexpected character after line continuation character (<unknown>, line 1)"
+    },
+    {
+      "commit_hash": "ea8aa4b63cd50e64eeb7d46877cd9ec8089af322",
+      "author_name": "Test User",
+      "author_email": "test@example.com",
+      "commit_date": "2026-05-25T09:19:46+08:00",
+      "file_path": "complex.py",
+      "added_lines": 1,
+      "deleted_lines": 1,
+      "churn": 2,
+      "age_days": 0,
+      "message": "Fix: add helper function PR #124",
+      "is_bug_fix": true,
+      "file_type": "py",
+      "cyclomatic_complexity": 0,
+      "maintainability_index": 0,
+      "method_count": 0,
+      "error": "unexpected character after line continuation character (<unknown>, line 1)"
+    }
+  ],
+  "author_experience": {
+    "test@example.com": {
+      "total_commits": 5,
+      "unique_prs": 2
+    }
+  },
+  "bug_frequency": {
+    "total_bug_fixes_last_3months": 2,
+    "file_bug_counts": {
+      "math.py": 1,
+      "complex.py": 1
+    }
+  }
+}

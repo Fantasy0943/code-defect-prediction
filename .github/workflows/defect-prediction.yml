@@ -1,0 +1,42 @@
+name: Code Defect Prediction
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install mindspore==2.3.0
+        pip install scikit-learn imbalanced-learn
+        
+    - name: Download prediction model
+      run: |
+        mkdir -p data/la
+        curl -o data/la/features_train.pkl https://example.com/features_train.pkl
+        curl -o defect_prediction_model_la.ckpt https://example.com/model.ckpt
+        
+    - name: Run defect prediction
+      run: |
+        python defect_predict_cli.py --repo . --threshold 0.3
+        
+    - name: Upload prediction report
+      uses: actions/upload-artifact@v4
+      with:
+        name: prediction-report
+        path: prediction_report.json
