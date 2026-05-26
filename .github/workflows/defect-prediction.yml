@@ -24,12 +24,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install mindspore==2.9.0
         pip install scikit-learn imbalanced-learn
-        
-    - name: Download prediction model
-      run: |
-        mkdir -p data/la
-        curl -o data/la/features_train.pkl https://example.com/features_train.pkl
-        curl -o defect_prediction_model_la.ckpt https://example.com/model.ckpt
+        pip install pydriller radon lizard
         
     - name: Run defect prediction
       run: |
